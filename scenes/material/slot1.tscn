@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://meeaotkxc3s0"]
+
+[node name="Slot1" type="TextureRect"]
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

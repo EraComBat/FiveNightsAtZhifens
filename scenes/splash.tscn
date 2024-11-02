@@ -1,0 +1,274 @@
+[gd_scene load_steps=28 format=3 uid="uid://d2cqel87jkcwj"]
+
+[ext_resource type="Script" path="res://script/splash.gd" id="1_4op0x"]
+[ext_resource type="Texture2D" uid="uid://brhxby5u1fi1w" path="res://images/12.png" id="4_2fft6"]
+[ext_resource type="Texture2D" uid="uid://coichkqggbuhu" path="res://images/13.png" id="5_2yne3"]
+[ext_resource type="Texture2D" uid="uid://b0yp0g5mkscek" path="res://images/14.png" id="6_yv30w"]
+[ext_resource type="Texture2D" uid="uid://c1xrl4p16dfoo" path="res://images/15.png" id="7_4akxf"]
+[ext_resource type="Texture2D" uid="uid://cjf25em18pewr" path="res://images/16.png" id="8_v2avy"]
+[ext_resource type="Texture2D" uid="uid://che1ww06g53pp" path="res://images/17.png" id="9_twsey"]
+[ext_resource type="Texture2D" uid="uid://c6qfklsdlbfm1" path="res://images/18.png" id="10_p2kq1"]
+[ext_resource type="FontFile" uid="uid://dqs6ndo2fefjx" path="res://fonts/AuraDianZhenSong-2.ttf" id="12_1aplr"]
+[ext_resource type="AudioStream" uid="uid://dl0lhh71bdqvx" path="res://sounds/switch.wav" id="14_cekdr"]
+[ext_resource type="Texture2D" uid="uid://03ribww3f7l5" path="res://images/4.png" id="16_u3x5y"]
+[ext_resource type="Texture2D" uid="uid://b84b6gcu1auhp" path="res://images/6.png" id="17_7qq7y"]
+[ext_resource type="Texture2D" uid="uid://c82nkw5u3indm" path="res://images/8.png" id="18_f6ngq"]
+[ext_resource type="Texture2D" uid="uid://cxo3m7opmqwhy" path="res://images/9.png" id="19_7wa6q"]
+[ext_resource type="Shader" path="res://shaders/vhs_effect.gdshader" id="19_yswf8"]
+[ext_resource type="Texture2D" uid="uid://bqwfpaxmr60u" path="res://images/cursor.png" id="20_48e75"]
+[ext_resource type="Texture2D" uid="uid://cbto6mm7ikjv4" path="res://images/10.png" id="20_oso1g"]
+[ext_resource type="Texture2D" uid="uid://icuylahv58sm" path="res://images/21.png" id="21_yt8va"]
+[ext_resource type="Texture2D" uid="uid://dmnxp5khk8w42" path="res://images/22.png" id="22_fbf2t"]
+[ext_resource type="Texture2D" uid="uid://beewi6vixt3pc" path="res://images/25.png" id="23_hx6ev"]
+
+[sub_resource type="SpriteFrames" id="2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_2fft6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2yne3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_yv30w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_4akxf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_v2avy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_twsey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_p2kq1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 24.0
+}]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yeogp"]
+shader = ExtResource("19_yswf8")
+shader_parameter/resolution = Vector2(320, 180)
+shader_parameter/scan_line_amount = 1.0
+shader_parameter/warp_amount = 0.1
+shader_parameter/noise_amount = 0.03
+shader_parameter/interference_amount = 0.2
+shader_parameter/grille_amount = 0.1
+shader_parameter/grille_size = 1.0
+shader_parameter/vignette_amount = 0.6
+shader_parameter/vignette_intensity = 0.4
+shader_parameter/aberation_amount = 0.5
+shader_parameter/roll_line_amount = 0.3
+shader_parameter/roll_speed = 8.0
+shader_parameter/scan_line_strength = -8.0
+shader_parameter/pixel_strength = -2.0
+
+[sub_resource type="SpriteFrames" id="13"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_u3x5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_7qq7y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_f6ngq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_7wa6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_oso1g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_yt8va")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_fbf2t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_hx6ev")
+}],
+"loop": false,
+"name": &"default",
+"speed": 24.0
+}]
+
+[sub_resource type="Animation" id="Animation_jrkcl"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect4:color:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect4:color:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ColorRect4:color:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ColorRect4:color:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_p8bog"]
+resource_name = "new_animation"
+
+[sub_resource type="Animation" id="Animation_3s3wq"]
+resource_name = "new_animation_2"
+length = 7.0
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect4:color:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1, 6.125, 7)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect4:color:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1, 6.13333, 7)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ColorRect4:color:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1, 6.125, 7)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ColorRect4:color:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1, 6.125, 7)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_i3jf7"]
+_data = {
+"RESET": SubResource("Animation_jrkcl"),
+"new_animation": SubResource("Animation_p8bog"),
+"new_animation_2": SubResource("Animation_3s3wq")
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_4op0x")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(572, 319)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+
+[node name="bgmPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_cekdr")
+volume_db = 4.0
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_right = 1165.0
+offset_bottom = 656.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="ColorRect3"]
+modulate = Color(1, 1, 1, 0.305882)
+position = Vector2(573, 317)
+sprite_frames = SubResource("2")
+autoplay = "default"
+frame_progress = 0.547099
+
+[node name="Label" type="Label" parent="."]
+offset_left = 75.0
+offset_top = 144.0
+offset_right = 1083.0
+offset_bottom = 372.0
+theme_override_fonts/font = ExtResource("12_1aplr")
+theme_override_font_sizes/font_size = 56
+text = "警告:
+本游戏含有闪光,跳脸,恐怖等元素
+心脏病或光敏性癫痫患者请勿游玩此游戏
+"
+horizontal_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_yeogp")
+offset_left = -44.0
+offset_right = 1150.0
+offset_bottom = 650.0
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+offset_left = -40.0
+offset_top = -40.0
+offset_right = 1197.0
+offset_bottom = 692.0
+color = Color(0, 0, 0, 0)
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(581, 359)
+sprite_frames = SubResource("13")
+frame = 7
+frame_progress = 1.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_i3jf7")
+}
+
+[node name="Cursor" type="Sprite2D" parent="."]
+position = Vector2(-765, 295)
+texture = ExtResource("20_48e75")
+
+[connection signal="finished" from="bgmPlayer" to="." method="_on_bgm_player_finished"]

@@ -1,0 +1,418 @@
+[gd_scene load_steps=13 format=3 uid="uid://csfujuwmwkjmq"]
+
+[ext_resource type="Script" path="res://script/custom.gd" id="1"]
+[ext_resource type="FontFile" uid="uid://dqs6ndo2fefjx" path="res://fonts/AuraDianZhenSong-2.ttf" id="2_tq2h0"]
+[ext_resource type="Texture2D" uid="uid://xgntoh415as6" path="res://images/MONSTERS/EVIL.png" id="3_pula6"]
+[ext_resource type="Texture2D" uid="uid://vypinmg6ksji" path="res://images/MONSTERS/WARDEN.png" id="4_d5awv"]
+[ext_resource type="Texture2D" uid="uid://boffr26y01p8w" path="res://images/MONSTERS/bot.png" id="5_i3oiv"]
+[ext_resource type="Texture2D" uid="uid://dhwfj1h3ky0p5" path="res://images/rooms/zhifen.png" id="6_dn8o0"]
+[ext_resource type="Texture2D" uid="uid://bs2l3fu30hjv8" path="res://images/MW/mouthwash.png" id="7_t556y"]
+[ext_resource type="Texture2D" uid="uid://l44aclhts2ip" path="res://images/rooms/GHOST.png" id="8_10th0"]
+[ext_resource type="Texture2D" uid="uid://cekskt3lg5m1n" path="res://images/MONSTERS/556.png" id="9_b85be"]
+[ext_resource type="Texture2D" uid="uid://b8fc38grsbi8" path="res://images/MONSTERS/557.png" id="10_muuc5"]
+[ext_resource type="Texture2D" uid="uid://34t0ncotkdnw" path="res://images/png/595.png" id="10_ycdxc"]
+[ext_resource type="Texture2D" uid="uid://b46pw4u2iervc" path="res://images/png/602.png" id="12_iv6i3"]
+
+[node name="Custom" type="Node2D"]
+script = ExtResource("1")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1033.0
+offset_top = 559.0
+offset_right = 1127.0
+offset_bottom = 634.0
+theme_override_font_sizes/font_size = 48
+text = "GO!"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 454.0
+offset_right = 658.0
+offset_bottom = 70.0
+theme_override_fonts/font = ExtResource("2_tq2h0")
+theme_override_font_sizes/font_size = 51
+text = "自定义夜"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 574.0
+offset_right = 478.0
+offset_bottom = 649.0
+theme_override_fonts/font = ExtResource("2_tq2h0")
+theme_override_font_sizes/font_size = 21
+text = "AI等级参数越高,攻击越频繁
+修改AI等级来开始游戏!"
+
+[node name="Evil" type="Sprite2D" parent="."]
+position = Vector2(825, 237)
+scale = Vector2(0.797619, 0.797619)
+texture = ExtResource("3_pula6")
+
+[node name="Warden" type="Sprite2D" parent="."]
+position = Vector2(1030.2, 237)
+texture = ExtResource("4_d5awv")
+
+[node name="Bot" type="Sprite2D" parent="."]
+position = Vector2(432, 239)
+scale = Vector2(3.4, 3.4)
+texture = ExtResource("5_i3oiv")
+
+[node name="Zhifen" type="Sprite2D" parent="."]
+position = Vector2(90, 329)
+scale = Vector2(0.909836, 0.909836)
+texture = ExtResource("6_dn8o0")
+
+[node name="Mouthwash" type="Sprite2D" parent="."]
+position = Vector2(244, 225)
+scale = Vector2(0.329121, 0.329121)
+texture = ExtResource("7_t556y")
+
+[node name="Ghost" type="Sprite2D" parent="."]
+position = Vector2(623, 230)
+scale = Vector2(0.569909, 0.569909)
+texture = ExtResource("8_10th0")
+
+[node name="plus" type="TextureButton" parent="."]
+offset_left = 113.0
+offset_top = 384.0
+offset_right = 153.0
+offset_bottom = 436.0
+texture_normal = ExtResource("9_b85be")
+texture_pressed = ExtResource("10_ycdxc")
+
+[node name="plus2" type="TextureButton" parent="."]
+offset_left = 290.0
+offset_top = 384.0
+offset_right = 330.0
+offset_bottom = 436.0
+texture_normal = ExtResource("9_b85be")
+texture_pressed = ExtResource("10_ycdxc")
+
+[node name="plus3" type="TextureButton" parent="."]
+offset_left = 467.0
+offset_top = 384.0
+offset_right = 507.0
+offset_bottom = 436.0
+texture_normal = ExtResource("9_b85be")
+texture_pressed = ExtResource("10_ycdxc")
+
+[node name="plus4" type="TextureButton" parent="."]
+offset_left = 638.0
+offset_top = 384.0
+offset_right = 678.0
+offset_bottom = 436.0
+texture_normal = ExtResource("9_b85be")
+texture_pressed = ExtResource("10_ycdxc")
+
+[node name="plus5" type="TextureButton" parent="."]
+offset_left = 869.0
+offset_top = 384.0
+offset_right = 909.0
+offset_bottom = 436.0
+texture_normal = ExtResource("9_b85be")
+texture_pressed = ExtResource("10_ycdxc")
+
+[node name="plus6" type="TextureButton" parent="."]
+offset_left = 1078.0
+offset_top = 384.0
+offset_right = 1118.0
+offset_bottom = 436.0
+texture_normal = ExtResource("9_b85be")
+texture_pressed = ExtResource("10_ycdxc")
+
+[node name="minus" type="TextureButton" parent="."]
+offset_left = 10.0
+offset_top = 384.0
+offset_right = 50.0
+offset_bottom = 436.0
+texture_normal = ExtResource("10_muuc5")
+texture_pressed = ExtResource("12_iv6i3")
+
+[node name="minus2" type="TextureButton" parent="."]
+offset_left = 187.0
+offset_top = 384.0
+offset_right = 227.0
+offset_bottom = 436.0
+texture_normal = ExtResource("10_muuc5")
+texture_pressed = ExtResource("12_iv6i3")
+
+[node name="minus3" type="TextureButton" parent="."]
+offset_left = 358.0
+offset_top = 384.0
+offset_right = 398.0
+offset_bottom = 436.0
+texture_normal = ExtResource("10_muuc5")
+texture_pressed = ExtResource("12_iv6i3")
+
+[node name="minus4" type="TextureButton" parent="."]
+offset_left = 541.0
+offset_top = 384.0
+offset_right = 581.0
+offset_bottom = 436.0
+texture_normal = ExtResource("10_muuc5")
+texture_pressed = ExtResource("12_iv6i3")
+
+[node name="minus5" type="TextureButton" parent="."]
+offset_left = 769.0
+offset_top = 384.0
+offset_right = 809.0
+offset_bottom = 436.0
+texture_normal = ExtResource("10_muuc5")
+texture_pressed = ExtResource("12_iv6i3")
+
+[node name="minus6" type="TextureButton" parent="."]
+offset_left = 973.0
+offset_top = 384.0
+offset_right = 1013.0
+offset_bottom = 436.0
+texture_normal = ExtResource("10_muuc5")
+texture_pressed = ExtResource("12_iv6i3")
+
+[node name="1" type="Label" parent="."]
+offset_left = 52.0
+offset_top = 376.0
+offset_right = 256.0
+offset_bottom = 446.0
+scale = Vector2(0.979616, 0.979616)
+theme_override_fonts/font = ExtResource("2_tq2h0")
+theme_override_font_sizes/font_size = 51
+text = "20"
+
+[node name="2" type="Label" parent="."]
+offset_left = 231.0
+offset_top = 376.0
+offset_right = 435.0
+offset_bottom = 446.0
+scale = Vector2(0.979616, 0.979616)
+theme_override_fonts/font = ExtResource("2_tq2h0")
+theme_override_font_sizes/font_size = 51
+text = "20"
+
+[node name="3" type="Label" parent="."]
+offset_left = 406.0
+offset_top = 376.0
+offset_right = 610.0
+offset_bottom = 446.0
+scale = Vector2(0.979616, 0.979616)
+theme_override_fonts/font = ExtResource("2_tq2h0")
+theme_override_font_sizes/font_size = 51
+text = "20"
+
+[node name="4" type="Label" parent="."]
+offset_left = 581.0
+offset_top = 376.0
+offset_right = 785.0
+offset_bottom = 446.0
+scale = Vector2(0.979616, 0.979616)
+theme_override_fonts/font = ExtResource("2_tq2h0")
+theme_override_font_sizes/font_size = 51
+text = "20"
+
+[node name="5" type="Label" parent="."]
+offset_left = 809.0
+offset_top = 376.0
+offset_right = 1013.0
+offset_bottom = 446.0
+scale = Vector2(0.979616, 0.979616)
+theme_override_fonts/font = ExtResource("2_tq2h0")
+theme_override_font_sizes/font_size = 51
+text = "20"
+
+[node name="6" type="Label" parent="."]
+offset_left = 1013.0
+offset_top = 375.0
+offset_right = 1217.0
+offset_bottom = 445.0
+scale = Vector2(0.979616, 0.979616)
+theme_override_fonts/font = ExtResource("2_tq2h0")
+theme_override_font_sizes/font_size = 51
+text = "20"
+
+[node name="plus8" type="TextureButton" parent="."]
+offset_left = 668.0
+offset_top = 467.0
+offset_right = 708.0
+offset_bottom = 519.0
+texture_normal = ExtResource("9_b85be")
+texture_pressed = ExtResource("10_ycdxc")
+
+[node name="minus8" type="TextureButton" parent="."]
+offset_left = 558.0
+offset_top = 467.0
+offset_right = 598.0
+offset_bottom = 519.0
+texture_normal = ExtResource("10_muuc5")
+texture_pressed = ExtResource("12_iv6i3")
+
+[node name="7" type="Label" parent="."]
+offset_left = 304.0
+offset_top = 472.0
+offset_right = 559.0
+offset_bottom = 540.0
+scale = Vector2(0.979616, 0.979616)
+theme_override_fonts/font = ExtResource("2_tq2h0")
+theme_override_font_sizes/font_size = 34
+text = "配电室发条转速:"
+
+[node name="8" type="Label" parent="."]
+offset_left = 708.0
+offset_top = 472.0
+offset_right = 946.0
+offset_bottom = 540.0
+scale = Vector2(0.979616, 0.979616)
+theme_override_fonts/font = ExtResource("2_tq2h0")
+theme_override_font_sizes/font_size = 34
+text = "秒转一格"
+
+[node name="9" type="Label" parent="."]
+offset_left = 592.0
+offset_top = 467.0
+offset_right = 796.0
+offset_bottom = 537.0
+scale = Vector2(0.979616, 0.979616)
+theme_override_fonts/font = ExtResource("2_tq2h0")
+theme_override_font_sizes/font_size = 40
+text = "20"
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(10, 436)
+gizmo_extents = 1000.0
+
+[node name="Marker2D2" type="Marker2D" parent="."]
+position = Vector2(147, 436)
+gizmo_extents = 1000.0
+
+[node name="Marker2D" type="Marker2D" parent="Marker2D2"]
+position = Vector2(40, 0)
+gizmo_extents = 1000.0
+
+[node name="Marker2D2" type="Marker2D" parent="Marker2D2"]
+position = Vector2(-137, -52)
+gizmo_extents = 1000.0
+
+[node name="Marker2D3" type="Marker2D" parent="."]
+position = Vector2(187, 436)
+gizmo_extents = 1000.0
+
+[node name="Marker2D4" type="Marker2D" parent="."]
+position = Vector2(324, 436)
+gizmo_extents = 1000.0
+
+[node name="Marker2D" type="Marker2D" parent="Marker2D4"]
+position = Vector2(40, 0)
+gizmo_extents = 1000.0
+
+[node name="Marker2D2" type="Marker2D" parent="Marker2D4"]
+position = Vector2(-137, -52)
+gizmo_extents = 1000.0
+
+[node name="Marker2D5" type="Marker2D" parent="."]
+position = Vector2(364, 436)
+gizmo_extents = 1000.0
+
+[node name="Marker2D6" type="Marker2D" parent="."]
+position = Vector2(501, 436)
+gizmo_extents = 1000.0
+
+[node name="Marker2D" type="Marker2D" parent="Marker2D6"]
+position = Vector2(40, 0)
+gizmo_extents = 1000.0
+
+[node name="Marker2D2" type="Marker2D" parent="Marker2D6"]
+position = Vector2(-137, -52)
+gizmo_extents = 1000.0
+
+[node name="Marker2D7" type="Marker2D" parent="."]
+position = Vector2(501, 436)
+gizmo_extents = 1000.0
+
+[node name="Marker2D8" type="Marker2D" parent="."]
+position = Vector2(638, 436)
+gizmo_extents = 1000.0
+
+[node name="Marker2D" type="Marker2D" parent="Marker2D8"]
+position = Vector2(40, 0)
+gizmo_extents = 1000.0
+
+[node name="Marker2D2" type="Marker2D" parent="Marker2D8"]
+position = Vector2(-137, -52)
+gizmo_extents = 1000.0
+
+[node name="Marker2D9" type="Marker2D" parent="."]
+position = Vector2(677, 436)
+gizmo_extents = 1000.0
+
+[node name="Marker2D10" type="Marker2D" parent="."]
+position = Vector2(814, 436)
+gizmo_extents = 1000.0
+
+[node name="Marker2D" type="Marker2D" parent="Marker2D10"]
+position = Vector2(40, 0)
+gizmo_extents = 1000.0
+
+[node name="Marker2D2" type="Marker2D" parent="Marker2D10"]
+position = Vector2(-137, -52)
+gizmo_extents = 1000.0
+
+[node name="Marker2D11" type="Marker2D" parent="."]
+position = Vector2(854, 436)
+gizmo_extents = 1000.0
+
+[node name="Marker2D12" type="Marker2D" parent="."]
+position = Vector2(991, 436)
+gizmo_extents = 1000.0
+
+[node name="Marker2D" type="Marker2D" parent="Marker2D12"]
+position = Vector2(40, 0)
+gizmo_extents = 1000.0
+
+[node name="Marker2D2" type="Marker2D" parent="Marker2D12"]
+position = Vector2(-137, -52)
+gizmo_extents = 1000.0
+
+[node name="Marker2D13" type="Marker2D" parent="."]
+position = Vector2(854, 436)
+gizmo_extents = 1000.0
+
+[node name="Marker2D14" type="Marker2D" parent="."]
+position = Vector2(991, 436)
+gizmo_extents = 1000.0
+
+[node name="Marker2D" type="Marker2D" parent="Marker2D14"]
+position = Vector2(40, 0)
+gizmo_extents = 1000.0
+
+[node name="Marker2D2" type="Marker2D" parent="Marker2D14"]
+position = Vector2(-137, -52)
+gizmo_extents = 1000.0
+
+[node name="Marker2D15" type="Marker2D" parent="."]
+position = Vector2(1031, 436)
+gizmo_extents = 1000.0
+
+[node name="Marker2D16" type="Marker2D" parent="."]
+position = Vector2(1168, 436)
+gizmo_extents = 1000.0
+
+[node name="Marker2D" type="Marker2D" parent="Marker2D16"]
+position = Vector2(40, 0)
+gizmo_extents = 1000.0
+
+[node name="Marker2D2" type="Marker2D" parent="Marker2D16"]
+position = Vector2(-137, -52)
+gizmo_extents = 1000.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="plus" to="." method="_on_plus_pressed"]
+[connection signal="pressed" from="plus2" to="." method="_on_plus_2_pressed"]
+[connection signal="pressed" from="plus3" to="." method="_on_plus_3_pressed"]
+[connection signal="pressed" from="plus4" to="." method="_on_plus_4_pressed"]
+[connection signal="pressed" from="plus5" to="." method="_on_plus_5_pressed"]
+[connection signal="pressed" from="plus6" to="." method="_on_plus_6_pressed"]
+[connection signal="pressed" from="minus" to="." method="_on_minus_pressed"]
+[connection signal="pressed" from="minus2" to="." method="_on_minus_2_pressed"]
+[connection signal="pressed" from="minus3" to="." method="_on_minus_3_pressed"]
+[connection signal="pressed" from="minus4" to="." method="_on_minus_4_pressed"]
+[connection signal="pressed" from="minus5" to="." method="_on_minus_5_pressed"]
+[connection signal="pressed" from="minus6" to="." method="_on_minus_6_pressed"]
+[connection signal="pressed" from="plus8" to="." method="_on_plus_8_pressed"]
+[connection signal="pressed" from="minus8" to="." method="_on_minus_8_pressed"]
